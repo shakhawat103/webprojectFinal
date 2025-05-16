@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Join Committee Form</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+        .index-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        height: 900px;
+      }
+
+      .container1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+      }
+      .form-container {
+        background-color: white;
+        padding: 30px;
+        border-radius: 10px;
+        width: 100%;
+        max-width: 500px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      h2 {
+        text-align: center;
+        color: #004d4d;
+      }
+      input,
+      select {
+        width: 100%;
+        padding: 12px;
+        margin: 10px 0;
+        border-radius: 6px;
+        border: 1px solid #ccc;
+      }
+      button {
+        width: 100%;
+        padding: 12px;
+        background-color: green;
+        color: white;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #006400;
+      }
+
+       @media (max-width: 992px) {
+
+        .container{
+          width: auto;
+        }
+        .index-header {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+      }  
+
+    </style>
+  </head>
+  <body>
+    <header class="index-header">
+        <img src="logo1.jpg" alt="" height="100px" width="100px" style="border-radius: 50%;" />
+        <h1>Green University Virtual Gaming Society</h1>
+      </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="team.html">Committee</a>
+      <a href="gallery.html" class="active">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container1">
+      <div class="form-container">
+        <h2>Committee Registration Form</h2>
+        <form action="#" method="post">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <select name="dept" id="dept">
+            <option value="">Department</option>
+            <option value="">CSE</option>
+            <option value="">SWE</option>
+            <option value="">ADS</option>
+          </select>
+
+          <select name="batch" id="batch" style="width: 100%">
+            <option value="#">Batch</option>
+            <option value="">212</option>
+            <option value="">213</option>
+            <option value="">221</option>
+            <option value="">222</option>
+            <option value="">223</option>
+            <option value="">231</option>
+            <option value="">232</option>
+          </select>
+          <input
+            type="text"
+            name="studentId"
+            placeholder="Student ID"
+            required
+          />
+          <input
+            type="text"
+            name="expectedPosition"
+            placeholder="Expected Position"
+            required
+          />
+          <input type="tel" name="phone" placeholder="Phone Number" required />
+          <input type="email" name="email" placeholder="Email" required />
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

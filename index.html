@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GUVGS | Home</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .index-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      main {
+        max-width: 1200px;
+        margin: 40px auto;
+        padding: 20px;
+      }
+
+      section {
+        margin-bottom: 60px;
+      }
+
+      section h2 {
+        font-size: 2.5rem;
+        margin-bottom: 20px;
+        color: #1b5e20;
+      }
+
+      section p {
+        font-size: 1rem;
+        line-height: 1.6;
+        color: #555;
+      }
+
+      .badge {
+        display: inline-block;
+        background-color: #c8e6c9;
+        color: #1b5e20;
+        padding: 5px 15px;
+        border-radius: 25px;
+        font-weight: bold;
+        margin-bottom: 15px;
+      }
+
+      .vision-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .card {
+        flex: 1 1 200px;
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+      }
+
+      .card:hover {
+        transform: translateY(-5px);
+      }
+
+      .card h3 {
+        color: #1b5e20;
+        margin-bottom: 10px;
+      }
+
+      .numbers-grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        margin-top: 30px;
+      }
+
+      .number-item {
+        text-align: center;
+      }
+
+      .number-item h3 {
+        font-size: 2.5rem;
+        color: #1b5e20;
+        margin-bottom: 10px;
+      }
+
+      .number-item p {
+        color: #555;
+      }
+
+    
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .vision-cards {
+          flex-direction: column;
+        }
+        .index-header {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="pos">
+      <header class="index-header">
+        <img
+          src="logo1.jpg"
+          alt=""
+          height="100px"
+          width="100px"
+          style="border-radius: 50%"
+        />
+        <h1>Green University Virtual Gaming Society</h1>
+      </header>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="events.html">Events</a>
+        <a href="team.html">Committee</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+
+    <main>
+      <section id="about">
+        <span class="badge">About Us</span>
+        <h2>Who We Are</h2>
+        <p>
+          Welcome to the Green University Virtual Gaming Society (GUVGS), a
+          dynamic and vibrant student-driven organization. GUVGS unites
+          passionate gamers and tech enthusiasts at Green University of
+          Bangladesh. Our mission is to build a strong community where
+          creativity, innovation, and leadership thrive through gaming and
+          virtual experiences.
+        </p>
+        <p>
+          We aim to empower students, provide opportunities for growth, and
+          organize impactful gaming tournaments, workshops, and events. GUVGS
+          stands as a platform for students to excel beyond academics and
+          explore the ever-evolving world of gaming and e-sports.
+        </p>
+      </section>
+
+      <section id="vision">
+        <h2>Our Vision</h2>
+        <p>
+          The vision of the Green University Virtual Gaming Society is to
+          enhance leadership, foster a thriving community of gamers, and develop
+          the professional and technical skills of students at Green University.
+        </p>
+
+        <div class="vision-cards">
+          <div class="card">
+            <h3>Community</h3>
+            <p>
+              Building a vibrant and inclusive community of gaming enthusiasts
+              and tech lovers.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Excellence</h3>
+            <p>
+              Striving for excellence through innovation, teamwork, and fair
+              play in all endeavors.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Learning</h3>
+            <p>
+              Promoting continuous learning and growth through workshops,
+              competitions, and collaborations.
+            </p>
+          </div>
+          <div class="card">
+            <h3>Events</h3>
+            <p>
+              Organizing impactful gaming events, tournaments, and leadership
+              programs.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="numbers">
+        <h2>GUVGS in Numbers</h2>
+        <p style="text-align: center; color: #555">
+          Our impact in the university and beyond
+        </p>
+
+        <div class="numbers-grid">
+          <div class="number-item">
+            <h3>100+</h3>
+            <p>Members</p>
+          </div>
+          <div class="number-item">
+            <h3>10+</h3>
+            <p>Events Per Year</p>
+          </div>
+          <div class="number-item">
+            <h3>10+</h3>
+            <p>Workshops</p>
+          </div>
+          <div class="number-item">
+            <h3>1+</h3>
+            <p>Years of Excellence</p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green University Virtual Gaming Society</h3>
+          <p>
+            A dynamic and student-driven non-profit and non-political
+            organization operating in collaboration with the Department of
+            Computer Science and Engineering (CSE) at Green University of
+            Bangladesh.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="https://green.edu.bd/">Main Website</a></p>
+          <p>
+            <a href="https://cse.green.edu.bd/"
+              >Computer Science and Engineering</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>
+            Green University of Bangladesh, Purbachal American City, Kanchan,
+            Rupganj, Narayanganj-1461, Dhaka, Bangladesh
+          </p>
+          <p>Email: guvgc@green.edu.bd</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Green University Computer Club. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>

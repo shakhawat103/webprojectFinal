@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>GUVGS | Events</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      .index-header {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .events-section {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+        padding: 40px 20px;
+      }
+      .event-card {
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s;
+        text-decoration: none;
+      }
+      .event-card:hover {
+        transform: translateY(-5px);
+      }
+      .event-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: fill;
+      }
+      .event-card-content {
+        padding: 15px;
+      }
+      .event-card-content h3 {
+        margin-top: 10px;
+        font-size: 1.2em;
+        color: #333;
+      }
+      .event-card-content p {
+        font-size: 0.9em;
+        color: #666;
+        margin: 8px 0;
+      }
+      .event-card-content .guests {
+        font-size: 0.85em;
+        color: #555;
+        margin-top: 10px;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: auto;
+      }
+      .footer-section {
+        flex: 1;
+        margin: 20px;
+        min-width: 250px;
+      }
+      .footer-section h3 {
+        font-size: 1.1em;
+        margin-bottom: 15px;
+      }
+      .footer-section p,
+      .footer-section a {
+        font-size: 0.9em;
+        text-decoration: none;
+      }
+      .footer-bottom {
+        text-align: center;
+        padding-top: 20px;
+        font-size: 0.8em;
+      }
+
+      @media (max-width: 992px) {
+
+        .container{
+          width: auto;
+        }
+        .index-header {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+      }
+
+      @media (max-width: 600px) {
+
+        .container{
+          width: auto;
+        }
+        
+        .index-header {
+          flex-direction: column;
+          text-align: center;
+          padding: 20px;
+        }
+        
+        
+      }
+    </style>
+  </head>
+  <body>
+    <header class="index-header">
+      <img src="logo1.jpg" alt="" height="100px" width="100px" style="border-radius: 50%;" />
+      <h1>Green University Virtual Gaming Society</h1>
+    </header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="events.html">Events</a>
+      <a href="team.html">Committee</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+      <h2 class="section-title">Events</h2>
+      <div class="events-section">
+        <a href="event1.html" class="event-card">
+          <img src="logic_ballte.jpg" alt="Event 1" />
+          <div class="event-card-content">
+            <h3>GUB Logic Battle 2025 (Beginner IDPC & IDMO)</h3>
+            <p>📅 March 9, 2025 • Day Long</p>
+            <div class="guests">
+              <strong>Guests:</strong> Dr. Muhammad Aminur Rahaman, Dr. Md.
+              Mostafijur Rahman
+            </div>
+          </div>
+        </a>
+        <a href="event2.html" class="event-card">
+          <img src="comittee.jpg" alt="Event 2" />
+          <div class="event-card-content">
+            <h3>Announcement of GUVGS Executive Committee 2025</h3>
+            <p>📅 March 3, 2025</p>
+          </div>
+        </a>
+        <a href="event3.html" class="event-card">
+          <img src="competition.jpg" alt="Event 3" />
+          <div class="event-card-content">
+            <h3>Inter Department Gaming Competition</h3>
+            <p>📅 February 24, 2025 • Day Long</p>
+            <div class="guests">
+              <strong>Guests:</strong> Ananya Zaman, Prof. Dr. Muhammad Shorif
+              Uddin
+            </div>
+          </div>
+        </a>
+        <a href="event4.html" class="event-card">
+          <img src="seminar.jpg" alt="Event 4" />
+          <div class="event-card-content">
+            <h3>Seminar: Right Path in Machine Learning, DevOps, SE & more</h3>
+            <p>📅 February 23, 2025 • 2:00 PM - 4:00 PM</p>
+            <div class="guests">
+              <strong>Guests:</strong> Md. Nure Alam Siddiq, Kamrul Hasan
+            </div>
+          </div>
+        </a>
+        <a href="event5.html" class="event-card">
+          <img src="orientation.jpg" alt="Event 5" />
+          <div class="event-card-content">
+            <h3>CSE Fresher’s Orientation Spring 2025</h3>
+            <p>📅 January 3, 2025 • 2:00 PM - 4:00 PM</p>
+            <div class="guests">
+              <strong>Guests:</strong> Prof. Dr. Md. Saiful Azad, Prof. Dr. Md.
+              Ahsan Habib
+            </div>
+          </div>
+        </a>
+        <a href="event6.html" class="event-card">
+          <img src="seminar1.jpg" alt="Event 6" />
+          <div class="event-card-content">
+            <h3>Webinar on Data Science & AI for Researchers</h3>
+            <p>📅 November 21, 2024 • 8:00 PM - 10:00 PM</p>
+            <div class="guests">
+              <strong>Guests:</strong> Md. Nure Alam Siddiq
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <footer>
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Green University Computer Club</h3>
+          <p>
+            A dynamic and student-driven non-profit and non-political
+            organization operating in collaboration with the Department of
+            Computer Science and Engineering (CSE) at Green University of
+            Bangladesh.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Quick Links</h3>
+          <p><a href="https://green.edu.bd/">Main Website</a></p>
+          <p>
+            <a href="https://cse.green.edu.bd/"
+              >Computer Science and Engineering</a
+            >
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h3>Contact Us</h3>
+          <p>
+            Green University of Bangladesh, Purbachal American City, Kanchan,
+            Rupganj, Narayanganj-1461, Dhaka, Bangladesh
+          </p>
+          <p>Email: gucc@green.edu.bd</p>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        &copy; 2025 Green University Computer Club. All rights reserved.
+      </div>
+    </footer>
+  </body>
+</html>
